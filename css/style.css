@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+}
+
+.icono{
+    width: 70px;
+    height: 70px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column; 
+    line-height: 1;
+}
+
+.texto1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav-links{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 16px 5%;
+    background-color: #17730d; 
+    color: white;
+    z-index: 10;
+}
+
+.hero { 
+    min-height: 65vh; 
+    display: flex; 
+    align-items: center; 
+    padding: 5vw; 
+    background-image: url("../image/ffffperro.png"); 
+    background-position: center; 
+    background-size: cover; 
+    color: white; 
+}
+    
+.hero-content {
+    max-width: 720px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.9rem 1.2rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.boton:hover { 
+    background-color: #17730d;
+    color: white;
+    transform: scale(1.05);
+}
