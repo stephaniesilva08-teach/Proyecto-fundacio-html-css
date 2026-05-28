@@ -1,37 +1,38 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 2px;
     text-decoration: none;
 }
 
-.icono{
+.icono {
     width: 70px;
     height: 70px;
 }
 
-.texto{
+.texto {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     line-height: 1;
 }
 
-.texto1{
+.texto1 {
     font-weight: bold;
     font-size: 20px;
 }
 
-.texto2{
+.texto2 {
     font-size: 18px;
     font-weight: bold;
 }
-.nav-links{
+
+.nav-links {
     font-weight: bold;
     font-size: 20px;
     color: white;
@@ -42,45 +43,45 @@ body {
     text-decoration: none;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: black;
     transition: 0.3s;
 }
 
-.navbar{
+.navbar {
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding: 16px 5%;
-    background-color: #17730d; 
+    background-color: #17730d;
     color: white;
     z-index: 10;
 }
 
-.hero { 
-    min-height: 65vh; 
-    display: flex; 
-    align-items: center; 
-    padding: 5vw; 
-    background-image: url("../image/ffffperro.png"); 
-    background-position: center; 
-    background-size: cover; 
-    color: white; 
+.principal {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    padding: 5vw;
+    background-image: url("../image/ffperro.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
 }
-    
-.hero-content {
+
+.principal-content {
     max-width: 720px;
 }
 
-.hero h1 {
+.principal h1 {
     font-size: 3rem;
     margin: 0 0 1rem;
 }
 
-.hero p {
+.principal p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -97,8 +98,165 @@ body {
     transition: all 0.3s ease;
 }
 
-.boton:hover { 
+.boton:hover {
     background-color: #17730d;
     color: white;
     transform: scale(1.05);
 }
+
+.container {
+    width: 92%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #0f172a;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.rescatar {
+    width: 60px;
+    height: 60px;
+}
+
+.cuidar {
+    width: 60px;
+    height: 60px;
+}
+
+.rehabilitar {
+    width: 70px;
+    height: 70px;
+}
+
+.ubicamos {
+    width: 60px;
+    height: 60px;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border: 3px solid #17730d;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px #17730d;
+}
+
+.card:hover {
+    background-color: #34b925;
+    color: white;
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: #17730d;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.botones {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.9rem 1.2rem;
+    color: black;
+    text-decoration: none;
+    background-color: #a4dd9e;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.botones:hover {
+    background-color: #17730d;
+    color: white;
+    transform: scale(1.05);
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.misionvision {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.cardsss {
+    flex: 1 1 400px;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0 4px 12px #17730d;
+    border: 3px solid #17730d;
+}
+
+.cardsss:hover {
+    background-color: #34b925;
+    color: white;
+    transform: scale(1.05);
+}
+
+.footer {
+    width: 100%;
+    margin-top: 9rem;
+    text-align: center;
+    background-color: #17730d;
+    color: white;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .know-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .know-us div.card {
+      grid-column: 4/9;
+  }
+  
+  .know-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+  @media (min-width: 768px) {
+      .know-us {
+          grid-template-columns: 400px, 400px;
+      }
+  }
+  
+  @media (min-width: 1024px) {
+      .know-us {
+          grid-template-columns:repeat(12, 1fr);
+          grid-offset: 20px;
+      }
+  }
