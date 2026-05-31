@@ -63,25 +63,68 @@ body {
     z-index: 10;
 }
 
+.carrusel{
+    position: absolute;
+    inset: 0;
+}
+
+.carrusels{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: carrusel 9s infinite;
+}
+
+.carrusel1{
+    background-image: url("../image/upscalemedia-transformed.png");
+    animation-delay: 0s;
+}
+
+.carrusel2{
+    background-image: url("../image/84908185-0128-44dd-85b6-7820c7afadef.jpeg");
+    animation-delay: 3s;
+}
+
+.carrusel3{
+    background-image: url("../image/imgIA2.png");
+    animation-delay: 6s;
+}
+
+.carrusel4{
+    background-image: url("../image/ImgIA1.png");
+    animation-delay: 9s;
+}
+
 .principal {
-    min-height: 60vh;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     padding: 5vw;
-    background-image: url("../image/upscalemedia-transformed.png");
-    background-position: center;
-    background-size: cover;
-    color: white;
+}
+
+.principal::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.25);
+    z-index:1;
 }
 
 .principal-content {
-    color: #0f172a;
+    position: relative;
+    z-index: 2;
     max-width: 720px;
+    color: white;
 }
 
 .principal h1 {
-    font-size: 3rem;
-    margin: 0 0 1rem;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
 }
 
 .principal p {
@@ -94,6 +137,7 @@ body {
     margin-right: 10px;
     padding: 1rem 1.5rem;
     background-color: white;
+    border: 3px solid #1e3a8a;
     color: #1e3a8a;
     text-decoration: none;
     border-radius: 12px;
@@ -176,6 +220,8 @@ body {
     margin-top: 1rem;
     padding: 0.9rem 1.2rem;
     background-color: #dbeafe;
+    border: 3px solid #2563eb;;
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.3);
     color: #1e3a8a;
     text-decoration: none;
     border-radius: 12px;
@@ -230,12 +276,6 @@ body {
     transform: scale(1.05);
 }
 
-.container3 {
-    width: 92%;
-    max-width: 1000px;
-    margin: 2rem auto;
-}
-
 .titulo-sectionn {
     text-align: center;
     font-size: 2.5rem;
@@ -243,13 +283,16 @@ body {
 }
 
 .cards-testimonios {
+    max-width: 1000px;
+    margin: 2rem auto;
+    width: 70%;
     display: flex;
-    gap: 64px;
+    gap: 50px;
 }
 
 .card-test1{
     background-color: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(59, 130, 246, 0.3);
     border: 2px solid #93c5fd;
@@ -271,4 +314,146 @@ body {
     text-align: center;
     background-color: #1e3a8a;
     color: white;
+}
+
+@media (max-width:480px){
+
+    .navbar{
+        padding:15px;
+    }
+
+    .logo{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .icono{
+        width:50px;
+        height:50px;
+    }
+
+    .nav-links{
+        font-size:14px;
+    }
+
+    .principal{
+        height:40vh;
+        padding:20px;
+    }
+
+    .principal h1{
+        font-size:1.5rem;
+    }
+
+    .principal p{
+        font-size:0.95rem;
+        line-height:1.5;
+    }
+
+    .boton{
+        display:inline-block;
+        margin-top:10px;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .card{
+        width:auto;
+    }
+
+    .cardsss{
+        width:auto;
+    }
+
+    .cards-testimonios{
+        flex-direction:column;
+        width:95%;
+    }
+
+    .container2{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .section h2,
+    .titulo-sectionn{
+        font-size:2rem;
+    }
+
+    .footer{
+        font-size:14px;
+        padding:10px;
+    }
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        font-size:16px;
+    }
+
+    .principal{
+        height:45vh;
+    }
+
+    .principal-content{
+        text-align:center;
+        margin:auto;
+    }
+
+    .principal h1{
+        font-size:2rem;
+    }
+
+    .principal p{
+        font-size:1.1rem;
+    }
+
+    .cards{
+        flex-wrap:wrap;
+    }
+
+    .cards-testimonios{
+        flex-wrap:wrap;
+        width:90%;
+        justify-content:center;
+    }
+
+    .container2{
+        flex-wrap:wrap;
+    }
+}
+
+@keyframes carrusel{
+
+    0%{
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    30%{
+        opacity:1;
+    }
+
+    40%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:0;
+    }
+
 }

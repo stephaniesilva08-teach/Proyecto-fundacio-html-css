@@ -1,14 +1,49 @@
 body{
-    background-image: 
-    linear-gradient(rgba(255,255,255,0.45),
-    rgba(255,255,255,0.45)),
-    url(../image/fondoadoptar.png);
-    background-color: #60a5fa;
-    background-position: center;
-    background-size: cover;
+    background-color: white;
     min-height: 100vh;
     padding-bottom: 50px;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+}
+
+.icono {
+    width: 70px;
+    height: 70px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #1e40afe0;
+    color: white;
+    z-index: 0;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.texto1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .nav-linkss{
     position: sticky;
     top: 0;
@@ -38,16 +73,42 @@ body{
     color: black;
     transition: 0.3s;
 }
-
-.titulo{
-    font-size: 3rem;
-    color: black;
-    text-align: center;
-    padding-top: 30px;
-    margin-bottom: 40px;
+nav ul{
+    display: flex;
+    gap: 20px; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
 }
 
-.catalogo{
+nav li {
+    display: inline;
+}
+
+.catalogo-adopta{
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.icono-titulo{
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.catalogo-adopta h1{
+    font-size: 3rem;
+    color: #0f172a;
+    margin: 0;
+}
+
+.catalogo-adopta p{
+    color: #1f2d40ec;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.catalogo-opciones{
     width: 60%;
     margin: auto;
     display: grid;
