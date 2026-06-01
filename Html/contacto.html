@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/stylesss.css">
+</head>
+
+<body>
+    <nav class="nav-linkss">
+        <a class="logo">
+            <img src="../image/patita.png" class="icono" alt="logo">
+            <div class="texto">
+                <span class="texto1">HUELLAS</span>
+                <span class="texto2">A SALVO</span>
+            </div>
+        </a>
+        <ul class="menu">
+            <li><a href="../Html/index.html">Inicio</a></li>
+            <li><a href="../Html/adopta.html">Adopt</a></li>
+            <li><a href="../Html/galeria.html">Galery</a></li>
+            <li><a href="../Html/contacto.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <form class="formulario">
+
+            <div class="fila">
+                <div class="campo">
+                    <label>Nombre *</label>
+                    <input type="text" placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label>Apellidos *</label>
+                    <input type="text" placeholder="Ingrese sus apellidos" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>Ciudad *</label>
+                <input type="text" placeholder="Ingrese su ciudad" required>
+            </div>
+
+            <div class="campo success">
+                <label>Correo electrónico *</label>
+                <input type="email" value="usuario@email.com">
+                <small>Correo válido</small>
+            </div>
+
+            <div class="campo">
+                <label>Teléfono</label>
+                <input type="tel" placeholder="Ingrese su teléfono">
+            </div>
+
+            <div class="campo">
+                <label>Tipo de consulta *</label>
+
+                <select required>
+                    <option>Adopción</option>
+                    <option>Donación</option>
+                    <option>Voluntariado</option>
+                    <option>Información general</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+            <div class="campo error">
+                <label>Mensaje *</label>
+                <textarea placeholder="Escriba su mensaje"></textarea>
+                <small>Este campo es obligatorio</small>
+            </div>
+
+            <button type="submit">Enviar Mensaje</button>
+
+        </form>
+
+        <div class="info-contacto">
+            <p>Huellasasalvo@gmail.com</p>
+            <p>+57 300 123 4567</p>
+
+            <div class="redes">
+                <a href="#" class="botones">Instagram</a>
+                <a href="#" class="botones">Facebook</a>
+                <a href="#" class="botones">X</a>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
