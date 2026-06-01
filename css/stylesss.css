@@ -1,4 +1,7 @@
 body{
+    background-image: url(../image/fondocontact.png);
+    background-position: center;
+    background-size: cover;
     margin: 0;
 }
 
@@ -73,7 +76,6 @@ nav li {
 
 .contacto{
     padding: 80px 20px;
-    background: linear-gradient(to bottom, lightblue,#1e3a8a);
 }
 
 .contacto h2{
@@ -83,6 +85,7 @@ nav li {
 }
 
 .formulario{
+    border: 10px solid #5f76b7;
     max-width: 800px;
     margin: auto;
     background: white;
@@ -150,14 +153,6 @@ button:hover{
     color: #ef4444;
 }
 
-.success input{
-    border: 2px solid #22c55e;
-}
-
-.success small{
-    color: #22c55e;
-}
-
 input:placeholder-shown,
 textarea:placeholder-shown{
     border: 2px solid #f59e0b;
@@ -167,13 +162,17 @@ textarea:placeholder-shown{
     text-align: center;
 }
 
+.info-contacto p{
+    font-size: 1.3rem;
+}
+
 .botones {
     display: inline-block;
     margin-right: 10px;
     margin-top: 1rem;
     padding: 0.9rem 1.2rem;
     background-color: #dbeafe;
-    border: 3px solid #99b9ffcf;
+    border: 3px solid #5f76b7;
     box-shadow: 0 6px 18px rgba(59, 130, 246, 0.3);
     color: #1e3a8a;
     text-decoration: none;
@@ -186,4 +185,63 @@ textarea:placeholder-shown{
     background-color: #2563eb;
     color: white;
     transform: scale(1.05);
+}
+
+
+@media (max-width: 400px) {
+
+    .nav-linkss {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .contacto {
+        padding: 40px 10px;
+    }
+
+    .contacto h2 {
+        font-size: 1.6rem;
+    }
+
+    .botones {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .formulario {
+        padding: 30px;
+    }
+
+    .contacto h2 {
+        font-size: 2rem;
+    }
+
+    .menu {
+        font-size: 18px;
+    }
 }
