@@ -74,8 +74,9 @@ nav li {
     display: inline;
 }
 
-.galeria{
+.galeria .titulo{
     background-image: url(../image/fondogaleria.png);
+    background-size: cover;
     background-position: center;
     padding: 40px 20px;
     text-align: center;
