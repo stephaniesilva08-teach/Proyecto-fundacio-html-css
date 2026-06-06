@@ -189,25 +189,6 @@ textarea:placeholder-shown{
 
 
 @media (max-width: 400px) {
-
-    .nav-linkss {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .menu a {
-        display: block;
-        width: 100%;
-    }
-
     .formulario {
         padding: 20px;
     }

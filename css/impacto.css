@@ -1,9 +1,8 @@
-body{
-    background-image: url(../image/fondoimpacto.png);
+body {
+    background-image: url(../image/fondoimpacto2.png);
     background-position: center;
     background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: white;
     min-height: 100vh;
     padding-bottom: 50px;
     margin: 0;
@@ -37,7 +36,7 @@ body{
     font-weight: bold;
 }
 
-.nav-linkss{
+.nav-linkss {
     position: sticky;
     top: 0;
     display: flex;
@@ -66,10 +65,11 @@ body{
     color: black;
     transition: 0.3s;
 }
-nav ul{
+
+nav ul {
     display: flex;
-    gap: 20px; 
-    list-style: none; 
+    gap: 20px;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -78,25 +78,25 @@ nav li {
     display: inline;
 }
 
-.header{
+.header {
     text-align: center;
     padding: 60px 20px 30px;
 }
 
-.header h2{
+.header h2 {
     color: black;
     font-size: 2.5rem;
 }
 
-.header h3{
+.header h3 {
     background: #6daeff;
     border-radius: 5px;
-    border: 3px solid  #2563eb;
+    border: 3px solid #2563eb;
     font-size: 1.2rem;
     padding: 20px;
 }
 
-.cifras{
+.cifras {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -104,12 +104,13 @@ nav li {
     padding: 40px 20px;
 }
 
-.card{
+.card {
     background-color: white;
     padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 0 9px 20px rgba(59, 130, 246, 0.3);
     border: 3px solid #60a5fa;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
@@ -125,37 +126,41 @@ nav li {
     font-weight: bold;
 }
 
-.titulo h2{
+.titulo h2 {
     color: black;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.grafico h2{
+.titulo p {
+    font-size: 1.2rem;
+}
+
+.grafico h2 {
     color: black;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.card p{
+.card p {
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
 }
 
-.footnote{
+.footnote {
     font-size: 0.8rem;
     color: gray;
 }
 
-.grafico{
+.grafico {
     width: 70vw;
     background-color: white;
     border: 3px solid #60a5fa;
     box-shadow: 0 6px 18px rgba(59, 130, 246, 0.3);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -164,11 +169,11 @@ nav li {
     margin: auto;
 }
 
-.grafico1{
+.grafico1 {
     margin: 15px 0;
 }
 
-.grafico1 span{
+.grafico1 span {
     display: block;
     margin-bottom: 5px;
 }
@@ -198,17 +203,17 @@ nav li {
     border-radius: 10px;
 }
 
-.narrativa{
+.narrativa {
     background: #6daeff;
     border-radius: 5px;
-    border: 3px solid  #2563eb;
+    border: 3px solid #2563eb;
     text-align: center;
     font-size: 1.5rem;
     margin: auto;
     padding: 10px;
 }
 
-.boton{
+.boton {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.9rem 1.2rem;
@@ -222,40 +227,23 @@ nav li {
     transition: all 0.3s ease;
 }
 
-.boton:hover{
+.boton:hover {
     background-color: #2563eb;
     color: white;
     transform: scale(1.05);
 }
 
-@media(min-width:560px){
-    .nav-linkss{
-        font-size:14px;
-    }
-    .logo{
-        flex-direction:column;
-        text-align:center;
-    }
-    .cifras{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media(min-width:1024px){
-    .nav-linkss{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        font-size:16px;
-    }
-    .logo{
-        flex-direction:column;
-        text-align:center;
-    }
-    .cifras{
-
-        grid-template-columns: repeat(4,1fr);
+@media(min-width:560px) {
+    .cifras {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
 
+@media(min-width:1024px) {
+    .cifras {
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}

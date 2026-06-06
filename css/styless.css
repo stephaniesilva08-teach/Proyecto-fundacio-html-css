@@ -73,11 +73,12 @@ nav ul{
 nav li {
     display: inline;
 }
-
-.galeria .titulo{
+.galeria{
     background-image: url(../image/fondogaleria.png);
     background-size: cover;
     background-position: center;
+}
+.galeria .titulo{
     padding: 40px 20px;
     text-align: center;
 }
